@@ -12,7 +12,7 @@
 }
 
 body {
-    background:url("gif/background.gif") repeat-y 100% 100% fixed;
+    background:url("background.jpeg") repeat-y 100% 100% fixed;
     background-size: cover;
     height:100%;
     width:100%;
