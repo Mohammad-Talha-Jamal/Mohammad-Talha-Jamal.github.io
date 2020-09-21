@@ -82,7 +82,7 @@ function validateName(){
         }
 
         function resetForm(){
-            document.getElementById('conatct-form').reset();
+            document.getElementById('contact-form').reset();
             console.log('Reset');
         }
 
