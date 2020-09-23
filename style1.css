@@ -1,0 +1,270 @@
+@import url("https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    outline: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    background:url("https://thumbs.gfycat.com/WarmheartedCooperativeHoneybadger-size_restricted.gif") repeat-y 100% 100% fixed;
+    background-size: cover;
+    height:100%;
+    width:100%;
+}
+
+.navbar{
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+    padding: 30px 0;
+    background-color:white;
+    opacity: 80%;
+    
+}
+
+
+
+.burger{
+    display: none;
+}
+
+section{
+    padding-top: 10px;
+
+}
+
+.container{
+    margin: 0 250px;
+}
+
+.navbar-inner{
+    text-align: center;
+    justify-content: space-between;
+}
+
+.navbar-item{
+    list-style: none;
+    
+}
+
+.navbar-item li{
+    display: inline-block;
+    opacity: 100%;
+}
+
+.navbar-item li a{
+    font-size: 18px;
+    font-weight: 600;
+    text-decoration: none;
+    color: black;
+    margin: 8px 20px;
+    padding: 8px 0;
+}
+
+
+.navbar-item li a.active,
+.navbar-item li a:hover{
+    border-bottom: 3px solid teal;
+
+}
+
+.picture{
+    text-align: center;
+    padding-top:  150px;
+    margin: 0 auto;
+}
+
+.profile-pic{
+    margin: 0 100px;
+    margin-bottom: 20px;
+
+}
+
+.profile-pic img{
+    border-radius: 50%;
+    border: 4px solid #ffffff;
+    height: 400px;   
+}
+.shadow-dark{
+    -webkit-box-shadow: 0 0 20px rgba(12, 196, 209);
+    box-shadow: 0 0 20px rgb(12, 196, 209);
+}
+
+.shadow-darks{
+    -webkit-box-shadow: 0 0 20px rgba(12, 196, 209);
+    box-shadow: 0 0 20px rgb(12, 196, 209);
+    border-radius: 5%;
+    padding: 5%;
+}
+
+.intro h3{
+    font-size: 70px;
+    font-weight: 600;
+    text-decoration: none;
+    color: white;
+    margin-bottom: 30px;
+    
+}
+
+
+.subtitle{
+    margin-top: 100px;
+    margin-bottom: 60px;
+    text-align: center;
+    font-size: 50px;
+    font-weight: 700;
+    color: white;
+}
+
+.subtitles{
+    margin-top: 100px;
+    margin-bottom: 50px;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 600;
+    color: black;
+}
+
+.list li{
+    position: relative;
+    margin:  0 70px;
+    font-weight: 100;
+}
+
+.about-inner{
+    display: flex;
+    justify-content: space-between;
+    background-color:white;
+    padding: 5%;
+    border-radius: 10%;
+    opacity: 90%;
+}
+
+.about-content{
+    max-width: 100%;
+
+}
+
+.about-content p{
+    padding: 0px;
+    margin-bottom: 25px;
+    font-size: 20px;
+    line-height: 30px;
+    text-align: justify;
+    opacity: 100%;
+         
+}
+
+@media(max-width: 1440px){
+    .container{
+        margin: 0 150px;
+    }
+
+    .profile-pic{
+        margin: 50px;
+        margin-bottom: 20px;
+        padding: 10px;
+    }
+
+    .profile-pic img{
+        height: 300px;
+    }
+
+    .intro h3{
+        font-size: 40px;
+    }
+
+    .about-inner{
+        display: block;
+        width: 100%;
+    }
+
+    .about-content{
+        max-width: 100%;
+    }
+
+    .about-content p{
+        font-size: 20px;
+        line-height: 30px;
+    }
+    .list ul{
+        padding-top: 1px;
+    }
+}
+
+
+@media(max-width: 1200px){
+    .navbar{
+        padding-bottom: 0;
+    }
+
+    .burger{
+        display: block;
+        font-size: 26px;
+        line-height: 70px;
+        text-align: right;
+    }
+
+    .menu-btn{
+        cursor: pointer;
+    }
+
+    .navbar-item{
+        width: 100%;
+        text-align: center;
+    }
+
+    .close{
+        display: none;
+
+    }
+
+    .navbar-item li a.active,
+    .navbar-item li a:hover{
+        border-bottom: none;
+
+    }
+
+    .navbar-item li{
+        display: block;
+        padding: 15px 0;
+        border-bottom: 1px solid rgba(12, 196, 209,0.5);
+        margin: 0;
+        width: 100%;
+    }
+}
+
+@media(max-width: 800px){
+    .container{
+        margin: 0 20px;
+    }
+
+    .profile-pic{
+        margin: 0;
+        margin-bottom: 20px; 
+    }
+
+    .profile-pic img{
+        height: 200px;
+    }
+
+    .intro h3{
+        font-size: 25px;
+        margin-bottom: 30px;
+    }
+
+    .subtitle h3{
+        font-size: 25px;
+        margin-bottom: 30px;
+    }
+
+    .about-content p{
+        font-size: 14px;
+        line-height: 20px;
+    }
+}
